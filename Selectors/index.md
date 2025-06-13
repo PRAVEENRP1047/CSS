@@ -4,8 +4,8 @@
 
 ## Universal selectors:
 
-- '\* {
+- \* {
   color: hotpink;
-  }'
+  }
 - This rule targets all elements in the page.
 - Also known as wildcard
