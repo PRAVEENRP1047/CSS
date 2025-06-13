@@ -8,13 +8,55 @@
 
 ## Extrinsic Vs Intrinsic sizing:
 
-  - [Google's web.dev article](https://web.dev/learn/css/box-model)
-  - When an element's dimension is set in CSS, then it is said to have extrinsic sizing.
-  - In Extrinsic sizing, the box with set dimensions will control the content.
-  - But even when extrinsic sizing is used above a threshold content overflows out of the box.
-  - One way to instrinsically size the element would be to set the width of the box's width property
+- When an element's dimension is set in CSS, then it is said to have extrinsic sizing.
+- In Extrinsic sizing, the box with set dimensions will control the content.
+- But even when extrinsic sizing is used above a threshold content overflows out of the box.
+- One way to instrinsically size the element would be to set the width of the box's width property
   to the value "min-content".
-  - It means that the box should be as wide as the content inside it such that it wraps around it.
+- It means that the box should be as wide as the content inside it such that it wraps around it.
+- [Example](https://codepen.io/web-dot-dev/pen/abpoMBL)
 
 # Areas of Box Model:
-  
+
+- The four main areas of the box model are:
+  - Content box
+  - Padding box
+  - Border box
+  - Margin box
+
+## Content box:
+
+- Content box can control the size of it's parent.
+- The content box often has a flexible size because its size can grow or shrink based on what’s inside — unless it's
+  restricted by the parent.
+
+## Padding box:
+
+- It surrounds the content box
+- It is created by padding property
+- Scroll bars occupies this space if overflow: auto and overflow: scroll is set
+- [Example](https://codepen.io/web-dot-dev/pen/BaReoEV)
+
+## Border box:
+
+- It surrounds the padding box
+
+## Margin box:
+
+- It is the space around the box
+- Outline and box-shadow use this space too and don't affect the size of the box.
+- [Outline](https://codepen.io/web-dot-dev/pen/XWprGea)
+
+## Box Sizing:
+
+- An inline element's vertical margin exists but they do not affect the layout.
+- By default, the box-sizing is "content-box" by default meaning, the padding and border will be added with the
+  elements width and height (total width = content + padding + border)
+- When box-sizing is "border-box" it includes padding ,
+  border and width in the total. ( total width = content + padding + border.)
+
+
+
+# References:
+
+- [Google's web.dev article](https://web.dev/learn/css/box-model)
